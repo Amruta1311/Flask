@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>This is the puppy page for: {{ name | capitalize }}</h1>    
+<!-- In the above line we have applied a filter of capitalize that uppercases the first letter of every name -->
+<a href="{{url_for('static', filename = 'cat.jpeg')}}">Here</a>
+{% endblock %}

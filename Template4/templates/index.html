@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Please provide a username(that meets the requirements)</h1>
+
+    <form action="{{url_for('report')}}">
+        <label for="username">Username:</label>
+        <input type="text" name= "username">
+        <input type="submit" value="Submit Form">
+    </form>
+</div>
+
+{% endblock %}

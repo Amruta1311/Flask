@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the site!</h1>
+    <h2>Here is a cat for you!</h2>
+    <h3>Hello {{my_variable}}!</h3>
+    <h4>{{letter}}</h4>
+    <h4>{{letter[0]}}</h4>
+    <h3>Meet {{cat_dict['cat_name']}}</h3>
+    <h1>----------------------------------------------</h1>
+    <h1>{{list1}}</h1>
+    <ul>
+        {% for item in list1 %}
+        <li>{{item}}</li>
+        {% endfor %}
+    </ul>
+
+    {%if 'Charlie' in list1 %}
+        <p>Found you Charlie!</p>
+    {% else %}
+        <p>Hmm .. Charlie not in the list!</p>
+    {% endif %} <!--Jinja Templating -->
+
+    <h1>----------------------------------------------</h1>
+    <img src="../static/cat.jpeg" alt="">
+</body>
+</html>
